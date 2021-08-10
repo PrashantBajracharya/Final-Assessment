@@ -1,0 +1,294 @@
+/<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Blogs</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <style type="text/css">
+     *
+          {
+            box-sizing:border-box;    
+          }
+        #container
+          {
+            width:1140px;
+            min-height:800px;
+            margin:auto auto;
+          }
+        body
+          {
+            font-family:Calibri;
+            padding:10px;
+            background: #99e699;
+          }
+        .header
+          {
+            padding:20px;
+            text-align:center;
+            background:white;
+          }
+        .header h1
+          {
+            font-size:50px;
+          }
+        .topnav
+          {
+            overflow:hidden;
+            background-color:#F0FFF0;
+            height:100px;
+            border:1px solid #228B22;
+          }
+        .topnav a
+            {
+              float:left;
+              display:block;
+              color:#228B22;
+              text-align:center;
+              padding:17px 20px;
+              border:2px hidden;
+              text-decoration:none;
+              line-height:30px;
+            }
+        .topnav a:hover 
+            {
+              background-image: linear-gradient(to right,rgb(0, 114, 66) 0%,rgb(4, 109, 91) 100%);
+              color:#F0FFF0;
+            }
+
+      .leftcolumn
+        {
+          float:left;
+          width: 100%;
+        }
+      .rightcolumn
+          {
+            float:left;
+            width:25%;
+            background-color:#F0FFF0;
+            padding-left:20px;
+            position:relative;
+            top:20px;
+            height:1367px;
+            border:1px solid #228B22;
+          }
+      .row:after
+        {
+          content:"";
+          display:table;
+          clear:both;
+        }
+      .logo
+        {
+          position:relative;
+          top: -20px;
+        }
+      .bottom_text_2
+        {   
+          float:left;
+          display:block;
+          padding-left:87px;
+          padding-right:87px;
+          border-left:solid #228B22;
+          height:312px;
+        }
+      .leftcolumn
+        {
+          float:left;
+          width:75%;
+        }
+      .bottom_text_1
+        {  
+          float:left;
+          display:block;
+          padding-left:80px;
+          padding-right:80px;
+          border-right:none;
+          height:312px;
+        }
+      .bottom_text_3
+        { 
+          float:left;
+          display:block;
+          padding-left:50px;
+          padding-right:50px;
+          border-left:solid #228B22;
+        }
+      .footer
+          {
+            padding:20px;
+            text-align:center;
+            background:#F0FFF0;
+            margin-top:20px;
+            border:1px solid #228B22;
+            height:350px;
+            overflow:hidden;
+          }
+      h2,p,h5,h3,h4
+          {
+            color:#228B22;
+          }
+      .card
+          {
+            background-color:#F0FFF0;
+            padding:20px;
+            margin-top:20px;
+            border:1px solid #228B22;
+          }
+      .card1
+          {
+            background-color:#F0FFF0;
+            padding:20px;
+            margin-top:20px;
+            border:1px solid #228B22;
+            position:relative;
+            left:-10px;
+          }
+      ul
+          {
+            color: #228B22;
+          }
+      a
+          {
+            text-decoration:none;
+            color:#228B22;
+          }
+      ol li
+          {
+            line-height:50px;
+            color:#228B22;
+          }
+      ol
+          {
+              list-style-type:none;
+          }
+    </style>
+	</head>
+	<body>
+		<div id="container">
+      <div class="topnav">
+        <img src="Images/logo.png" height="145px" width="200px" class="logo" alt="Logo">
+        <a href="contact.html" style="float:right;">Contact us</a>
+        <a href="reviews.html" style="float:right;">Reviews</a>
+        <a href="blogs.html" style="float:right;">Blogs</a>
+        <a href="gallery.html" style="float:right;">Gallery</a>
+        <a href="index.html" style="float:right;">Home</a>
+      </div>
+       <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="Images/image2.jpeg" height="600px" width="100%" alt="Tea & Herbs">
+          <div class="text">Tea & Herbs</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="Images/image3.jpg" height="600px" width="100%" alt="Coffee">
+          <div class="text">Coffee</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="Images/image1.jpg" height="600px" width="100%" alt="Spcies">
+          <div class="text">Spices</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="Images/image4.jpg" height="600px" width="100%" alt="Condiments">
+          <div class="text">Condiments</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="Images/image5.png" height="600px" width="100%" alt="Fruits & Vegetables">
+          <div class="text">Fruits & Vegetables</div>
+        </div>
+        <script type="text/javascript">
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() 
+  	        {
+  	          var i;
+  	          var slides = document.getElementsByClassName("mySlides");
+  	          for (i = 0; i < slides.length; i++) 
+  	            {
+  	              slides[i].style.display = "none";
+  	            }
+  	          slideIndex++;
+  	          if (slideIndex > slides.length) 
+  	            {
+  	              slideIndex = 1;
+  	            }
+  	          slides[slideIndex-1].style.display = "block";
+  	          setTimeout(showSlides, 2000);
+  	        }
+        </script>
+     </div>
+     <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>What are the health benefits of green tea?</h2>
+            <img src="Images/benefits.jpg" height="350px" width="800px" alt="Lipton® Tea" border="1px solid #228B22">
+            <p>Green tea has been shown to improve blood flow and lower cholesterol. A 2013 review of many studies found green tea helped prevent a range of heart-related issues, from high blood pressure to congestive heart failure.
+            What’s good for the heart is usually good for the brain; your brain needs healthy blood vessels, too. In one Swiss study, MRIs revealed that people who drank green tea had greater activity in the working-memory area of their brains. Green tea has also been shown to help block the formation of plaques that are linked to Alzheimer's disease.Green tea seems to help keep blood sugar stable in people with diabetes. Because catechins lower cholesterol and blood pressure, they can help protect against the damage a high-fat diet can cause, Ochner says.</p>
+          </div>
+          <div class="card" style="height:719px">
+            <h2>Health benefits of herbs</h2>
+            <img src="Images/benfits_2.png" height="300px" width="750px" alt="Iced tea" >
+            <p>Consuming herbs may help to prevent and manage heart disease, cancer and diabetes. It may also help to reduce blood clots and provide anti-inflammatory and anti-tumour properties. Research is ongoing but studies have shown that: </p>
+            <ul>
+              <li>Garlic, linseed, fenugreek and lemongrass may help lower cholesterol.</li>
+              <li>Garlic is useful for people with mildly elevated blood pressure.</li>
+              <li>Fenugreek can help control blood sugar and insulin activity (as can linseed, flaxseed and cinnamon).</li>
+              <li>Garlic, onions, chives, leeks, mint, basil, oregano, sage and many other herbs can help protect against cancer.</li>
+              <li>Herbs are rich in antioxidants, especially cloves, cinnamon, sage, oregano and thyme, by helping to reduce low-density lipoproteins (‘bad’ cholesterol).</li>
+            </ul>
+            <p>Fresh herbs often contain higher antioxidant levels compared to processed or dried herbs but if you are using herbs in order to harness their health-promoting aspects first and foremost, aim to add your fresh herbs at the end of cooking or as you serve to preserve these properties.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div classs="card">
+            <h2>Search us on</h2>
+            <a href="https://www.google.com" target="_blank"><img src="Images/google.png" height="70px" width="200px" alt="Google"></a><br>
+          </div>
+          <div class="card1">
+            <h3 style="text-align: center;">Our partner brands:</h3>
+            <ol>
+              <li><i><u>Lipton</i></u></li>
+              <a href="https://www.lipton.com/us/en/home.html" target="_blank"><img src="Images/Lipton.png" height="50px" width="50px"></a>
+              <p>Lipton is a proud national sponsor of American Heart Association’s Life is Why program* that inspires people to live healthier, longer lives.</p>
+              <li><i><u>Savory Spice</u></i></li>
+              <a href="https://www.savoryspiceshop.com/" target="_blank"><img src="Images/savoryS.jfif" height="50px" width="50px"></a>
+              <p>Our spices are ground fresh in small batches for superior quality and flavor and jars are still hand-filled at our Denver warehouse and in each one of our shops.</p>
+              <li><i><u>American Garden</u></i></li>
+              <a href="https://www.americangarden.us/en/home/" target="_blank"><img src="Images/AG.png" height="50px" width="70px"></a>
+              <p>American Garden started over two decades ago with just one product. Today we have over 250 products and can be found in over 50 countries across the Middle East, Africa, Far East, Asia and Europe.</p>
+              <li><i><u>Juas</u></i></li>
+              <a href="https://juasstore.com/" target="_blank"><img src="Images/juas.gif" height="50px" width="70px"></a>
+              <p> Optimize Your Health<br><br>
+              One-stop premium health food store in Nepal focused on keto & natural ingredients, superfoods, and traditional authentic herbs & oils.</p>
+            </ol>
+          </div>
+        </div>
+      </div>
+       <div class="footer">
+          <div class="bottom_text_1">
+            <h3>Socials:</h3>
+              <a href="https://www.instagram.com/" target="_blank"><img src="Images/insta.png" width="25px" height="25px" alt="Instagram"></a><p>HearthNP</p>
+              <a href="https://www.facebook.com/" target="_blank"><img src="Images/fb.png" width="25px" height="25px" alt="Facebook"></a><p>HearthNepal</p>
+              <a href="https://mail.google.com/" target="_blank"><img src="Images/gmail.png" width="25px" height="25px" alt="Gmail"></a><br><a href="Hearth@gmail.com" style="color:#228B22;">Hearth@gmail.com</a>
+          </div>
+          <div class="bottom_text_3">
+            <h3>Location:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7066.907295286187!2d85.3210152!3d27.672370600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1628395776969!5m2!1sen!2snp" width="400px" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="bottom_text_2">
+            <h3>Address info:</h3><br><p style="position: relative;top:-25px;">Kumaripati, Lalitpur<br>Nepal</p>
+            <h3>Opening time:</h3><br><p style="position: relative;top:-25px;">10:00 a.m.-6:00 p.m<br>Sunday - Friday<br><br>
+            <a href="#" style="color:#228B22;border:2px solid;text-decoration: none;padding:5px;">Back to up</a></p>
+          </div>
+        </div>  
+      </div>  
+	</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact us</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <link rel="stylesheet" href="form.css" />
+    <style type="text/css">
+      *
+        {
+          box-sizing:border-box;    
+        }
+      #container
+        {
+          width:1140px;
+          min-height:800px;
+          margin:auto auto;
+        }
+      body
+        {
+          font-family:Calibri;
+          padding:10px;
+          background: #99e699;
+        }
+      .header
+        {
+          padding:20px;
+          text-align:center;
+          background:white;
+        }
+      .header h1
+        {
+          font-size:50px;
+        }
+      .topnav
+        {
+          overflow:hidden;
+          background-color:#F0FFF0;
+          height:100px;
+          border:1px solid #228B22;
+        }
+      .topnav a
+        {
+          float:left;
+          display:block;
+          color:#228B22;
+          text-align:center;
+          border:2px hidden;
+          padding:17px 20px;
+          text-decoration:none;
+        }
+      .topnav a:hover 
+        {
+          background-image: linear-gradient(to right,rgb(0, 114, 66) 0%,rgb(4, 109, 91) 100%);
+          color:#F0FFF0;
+        }
+      .leftcolumn
+        {
+          float:left;
+          width:75%;
+        }
+      .rightcolumn 
+        {
+          float:left;
+          width:25%;
+          background-color:#F0FFF0;
+          padding-left:20px;
+          position:relative;
+          top:20px;
+          height:1367px;
+          border:1px solid #228B22;
+        }
+      .card
+        {
+          background-color:#F0FFF0;
+          padding:20px;
+          margin-top:20px;
+          border:1px solid #228B22;
+        }
+      .card1
+        {
+          background-color:#F0FFF0;
+          padding:20px;
+          margin-top:20px;
+          border:1px solid #228B22;
+          position:relative;
+          left:-10px;
+        }
+      .row:after
+        {
+          content:"";
+          display:table;
+          clear:both;
+        }
+      .footer
+        {
+          padding:20px;
+          text-align:center;
+          background:#ddd;
+          margin-top:20px;
+        }
+      .logo
+        {
+          position:relative;
+          top: -20px;
+        }
+      .form
+        {
+          width:300px;
+          padding:15px 40px 40px;
+          border:1px solid #228B22;
+          border-radius: 5px;
+          background-color: white;
+          margin: 4% auto;
+        }
+      .bottom_text_2
+        {   
+          float:left;
+          display:block;
+          padding-left:107px;
+          padding-right:87px;
+          border-left:solid #228B22;
+          height:312px;
+        }
+      .bottom_text_1
+        {      
+          float:left;
+          display:block;
+          padding-left:50px;
+          padding-right:100px;
+          border-right:none;
+          height:312px;
+        }
+      .bottom_text_3
+        {       
+          float:left;
+          display:block;
+          padding-left:50px;
+          padding-right:50px;
+          border-left:solid #228B22;
+        }
+      .footer
+        {
+          padding:20px;
+          text-align:center;
+          background:#F0FFF0;
+          margin-top:20px;
+          border:1px solid #228B22;
+          height:350px;
+          overflow:hidden;
+        }
+      h2,p,h5,h3,h4
+        {
+          color:#228B22;
+        }
+      a
+        {
+          text-decoration:none;
+          color:#228B22;
+        }
+      ol li
+        {
+          line-height:50px;
+          color:#228B22;
+        }
+      ol
+        {
+          list-style-type:none;
+        }
+    </style>
+	</head>
+	<body>
+		<div id="container">
+      <div class="topnav">
+        <img src="Images/logo.png" height="145px" width="200px" class="logo" alt="Logo">
+        <a href="contact.html"  style="float:right;">Contact us</a>
+        <a href="reviews.html"  style="float:right;">Reviews</a>
+        <a href="blogs.html" style="float:right;">Blogs</a>
+        <a href="gallery.html"  style="float:right;">Gallery</a>
+        <a href="index.html" style="float:right;">Home</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="Images/image2.jpeg" height="600px" width="100%" alt="Tea & Herbs">
+          <div class="text">Tea & Herbs</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="Images/image3.jpg" height="600px" width="100%" alt="Coffee">
+          <div class="text">Coffee</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="Images/image1.jpg" height="600px" width="100%" alt="Spcies">
+          <div class="text">Spices</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="Images/image4.jpg" height="600px" width="100%" alt="Condiments">
+          <div class="text">Condiments</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="Images/image5.png" height="600px" width="100%" alt="Fruits & Vegetables">
+          <div class="text">Fruits & Vegetables</div>
+        </div>
+        <script type="text/javascript">
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() 
+  	        {
+  	          var i;
+  	          var slides = document.getElementsByClassName("mySlides");
+  	          for (i = 0; i < slides.length; i++) 
+  	            {
+  	              slides[i].style.display = "none";
+  	            }
+  	          slideIndex++;
+  	          if (slideIndex > slides.length) 
+  	            {
+  	              slideIndex = 1;
+  	            }
+  	          slides[slideIndex-1].style.display = "block";
+  	          setTimeout(showSlides, 2000);
+  	        }
+        </script>
+     </div>
+        <div class="row">
+          <div class="leftcolumn">
+            <div class="card" style="height:1367px">
+               <div class="contact-banner">
+                  <h1>Contact Us</h1>
+              
+                  <p class="contact-description">
+                    We'd really love to hear from you! Please fill in the form below and
+                    submit
+                  </p>
+                </div>
+
+                <form name="contact-form">
+                  <div class="form-control">
+                    <label>Full Name:</label>
+                    <input name="name" placeholder="First and Last Name" />
+                    <div class="error hide">Name is required.</div>
+                  </div>
+
+                  <div class="form-control">
+                    <label>Email:</label>
+                    <input name="email"placeholder="e.g. your_email@example.com"/>
+                    <div class="error hide">Email is invalid.</div>
+                  </div>
+
+                  <div class="form-control">
+                    <label>Phone Number:</label>
+                    <input name="phone">
+                    <div class="error hide">Phone number is invalid.</div>
+                  </div>
+
+                  <div class="form-control">
+                    <label>Message:</label>
+                    <textarea name="message"></textarea>
+                    <div class="error hide">Message is required</div>
+                  </div>
+                 <button type="submit">SUBMIT FORM</button>
+                </form>
+                <script type="text/javascript">
+                    const form = document.querySelector("form[name='contact-form']");
+                    const nameInput = document.querySelector("input[name='name']");
+                    const emailInput = document.querySelector("input[name='email']");
+                    const phoneInput = document.querySelector("input[name='phone']");
+                    const messageInput = document.querySelector("textarea[name='message']");
+
+                    nameInput.isValid = () => !!nameInput.value;
+                    emailInput.isValid = () => isValidEmail(emailInput.value);
+                    phoneInput.isValid = () => isValidPhone(phoneInput.value);
+                    messageInput.isValid = () => !!messageInput.value;
+
+                    const inputFields = [nameInput, emailInput, phoneInput, messageInput];
+
+                    const isValidEmail = (email) => {
+                      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                      return re.test(String(email).toLowerCase());
+                    };
+
+                    const isValidPhone = (phone) => {
+                      const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+                      return re.test(String(phone).toLowerCase());
+                    };
+
+                    let shouldValidate = false;
+                    let isFormValid = false;
+
+                    const validateInputs = () => {
+                      console.log("we are here");
+                      if (!shouldValidate) return;
+
+                      isFormValid = true;
+                      inputFields.forEach((input) => {
+                        input.classList.remove("invalid");
+                        input.nextElementSibling.classList.add("hide");
+
+                        if (!input.isValid()) {
+                          input.classList.add("invalid");
+                          isFormValid = false;
+                          input.nextElementSibling.classList.remove("hide");
+                        }
+                      });
+                    };
+
+                    form.addEventListener("submit", (e) => {
+                      e.preventDefault();
+                      shouldValidate = true;
+                      validateInputs();
+                      if (isFormValid) {
+                        // TODO: DO AJAX REQUEST
+                      }
+                    });
+
+                    inputFields.forEach((input) => input.addEventListener("input", validateInputs));
+                </script>
+            </div>
+          </div>
+          <div class="rightcolumn">
+          <div classs="card">
+            <h2>Search us on</h2>
+            <a href="https://www.google.com" target="_blank"><img src="Images/google.png" height="70px" width="200px" alt="Google"></a><br>
+          </div>
+          <div class="card1">
+            <h3 style="text-align: center;">Our partner brands:</h3>
+            <ol>
+              <li><i><u>Lipton</i></u></li>
+              <a href="https://www.lipton.com/us/en/home.html" target="_blank"><img src="Images/Lipton.png" height="50px" width="50px"></a>
+              <p>Lipton is a proud national sponsor of American Heart Association’s Life is Why program* that inspires people to live healthier, longer lives.</p>
+              <li><i><u>Savory Spice</u></i></li>
+              <a href="https://www.savoryspiceshop.com/" target="_blank"><img src="Images/savoryS.jfif" height="50px" width="50px"></a>
+              <p>Our spices are ground fresh in small batches for superior quality and flavor and jars are still hand-filled at our Denver warehouse and in each one of our shops.</p>
+              <li><i><u>American Garden</u></i></li>
+              <a href="https://www.americangarden.us/en/home/" target="_blank"><img src="Images/AG.png" height="50px" width="70px"></a>
+              <p>American Garden started over two decades ago with just one product. Today we have over 250 products and can be found in over 50 countries across the Middle East, Africa, Far East, Asia and Europe.</p>
+              <li><i><u>Juas</u></i></li>
+              <a href="https://juasstore.com/" target="_blank"><img src="Images/juas.gif" height="50px" width="70px"></a>
+              <p> Optimize Your Health<br><br>
+              One-stop premium health food store in Nepal focused on keto & natural ingredients, superfoods, and traditional authentic herbs & oils.</p>
+            </ol>
+          </div>
+        </div>
+        </div>
+     <div class="footer">
+        <div class="bottom_text_1">
+          <ul style="line-height:45px;text-align:center;" type="none">
+            <h3>Site map:</h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="bottom_text_3">
+          <h3>Location:</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7066.907295286187!2d85.3210152!3d27.672370600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1628395776969!5m2!1sen!2snp" width="400px" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="bottom_text_2">
+          <h3>Address info:</h3><br><p style="position: relative;top:-25px;">Kumaripati, Lalitpur<br>Nepal</p>
+          <h3>Opening time:</h3><br><p style="position: relative;top:-25px;">10:00 a.m.-6:00 p.m<br>Sunday - Friday<br><br>
+          <a href="#" style="color:#228B22;border:2px solid;text-decoration: none;padding:5px;">Back to up</a></p>
+        </div>
+      </div>  
+      </form>	
+     </div>
+	</body>
+</html>

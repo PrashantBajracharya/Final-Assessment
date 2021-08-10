@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gallery</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+    <style type="text/css">
+       *
+            {
+              box-sizing:border-box;    
+            }
+          #container
+            {
+              width:1140px;
+              min-height:800px;
+              margin:auto auto;
+            }
+          body
+            {
+              font-family:Calibri;
+              padding:10px;
+              background: #99e699;
+            }
+          .header
+            {
+              padding:20px;
+              text-align:center;
+              background:white;
+            }
+          .header h1
+            {
+              font-size:50px;
+            }
+          .topnav
+            {
+              overflow:hidden;
+              background-color:#F0FFF0;
+              height:100px;
+              border:1px solid #228B22;
+            }
+          .topnav a
+              {
+                float:left;
+                display:block;
+                color:#228B22;
+                text-align:center;
+                padding:17px 20px;
+                border:2px hidden;
+                text-decoration:none;
+                line-height:30px;
+              }
+          .topnav a:hover 
+              {
+                background-image: linear-gradient(to right,rgb(0, 114, 66) 0%,rgb(4, 109, 91) 100%);
+                color: #F0FFF0;
+              }
+
+          .leftcolumn
+            {
+              float:left;
+              width: 100%;
+            }
+          .rightcolumn
+              {
+                float:left;
+                width:25%;
+                background-color:#F0FFF0;
+                padding-left:20px;
+                position:relative;
+                top:20px;
+                height:1371px;
+                border:1px solid #228B22;
+              }
+          .row:after
+            {
+              content:"";
+              display:table;
+              clear:both;
+            }
+          a
+            {
+              text-decoration:none;
+            }
+
+          .logo
+            {
+              position:relative;
+              top: -20px;
+            }
+          .bottom_text_2
+              {
+                float:left;
+                display:block;
+                padding-left:87px;
+                padding-right:87px;
+                border-left:solid #228B22;
+                height:312px;
+              }
+          .bottom_text_1
+              {
+                float:left;
+                display:block;
+                padding-left:80px;
+                padding-right:80px;
+                border-right:none;
+                height:312px;
+              }
+          .leftcolumn
+              {
+                float:left;
+                width:75%;
+              }
+          .bottom_text_3
+              {
+                float:left;
+                display:block;
+                padding-left:50px;
+                padding-right:50px;
+                border-left:solid #228B22;
+              }
+          .footer
+              {
+                padding:20px;
+                text-align:center;
+                background:#F0FFF0;
+                margin-top:20px;
+                border:1px solid #228B22;
+                height:350px;
+                overflow:hidden;
+              }
+          h2,p,h5,h3,h4
+              {
+                color:#228B22;
+              }
+          .card
+              {
+                background-color:#F0FFF0;
+                padding:20px;
+                margin-top:20px;
+                border:1px solid #228B22;
+              }
+          .card1
+              {
+                background-color:#F0FFF0;
+                padding:20px;
+                margin-top:20px;
+                border:1px solid #228B22;
+                position:relative;
+                left:-10px;
+              }
+    </style>
+	</head>
+	<body>
+		<div id="container">
+      <div class="topnav">
+        <img src="Images/logo.png" height="145px" width="200px" class="logo" alt="Logo">
+        <a href="contact.html"  style="float:right;">Contact us</a>
+        <a href="reviews.html"  style="float:right;">Reviews</a>
+        <a href="blogs.html" style="float:right;">Blogs</a>
+        <a href="gallery.html"  style="float:right;">Gallery</a>
+        <a href="index.html" style="float:right;">Home</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="Images/image2.jpeg" height="600px" width="100%" alt="Tea & Herbs">
+          <div class="text">Tea & Herbs</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="Images/image3.jpg" height="600px" width="100%" alt="Coffee">
+          <div class="text">Coffee</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="Images/image1.jpg" height="600px" width="100%" alt="Spcies">
+          <div class="text">Spices</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="Images/image4.jpg" height="600px" width="100%" alt="Condiments">
+          <div class="text">Condiments</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="Images/image5.png" height="600px" width="100%" alt="Fruits & Vegetables">
+          <div class="text">Fruits & Vegetables</div>
+        </div>
+        <script type="text/javascript">
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() 
+  	        {
+  	          var i;
+  	          var slides = document.getElementsByClassName("mySlides");
+  	          for (i = 0; i < slides.length; i++) 
+  	            {
+  	              slides[i].style.display = "none";
+  	            }
+  	          slideIndex++;
+  	          if (slideIndex > slides.length) 
+  	            {
+  	              slideIndex = 1;
+  	            }
+  	          slides[slideIndex-1].style.display = "block";
+  	          setTimeout(showSlides, 2000);
+  	        }
+        </script>
+     </div>
+     <div class="row">
+        <div class="leftcolumn">
+          <div class="card" style="height:1371px">
+            <h1 align="center" style="color:#228B22;">Picture gallery</h1>
+            <a href="Images/teagarden.jpeg" target=_blank"><img src="Images/teagarden.jpeg" height="350px" width="400px" alt="Tea Garden" border="1px solid #228B22"></a>
+            <a href="Images/cofe.jfif" target=_blank"><img src="Images/cofe.jfif" height="350px" width="409px" alt="Coffee Garden" border="1px solid #228B22"></a>
+            <p style="text-align:center">Some images of raw material for our products.<br>(Tea garden left side, Coffee garden right side)</p><br>
+            <a href="Images/spices.jpg" target="_blank"><img src="Images/spices.jpg" height="300px" width="400px" alt="Spices" border="1px solid #228B22"></a>
+            <a href="Images/herbsale.jpg"  target=_blank"><img src="Images/herbsale.jpg" height="300px" width="409px" alt="Herbs for sale" border="1px solid #228B22"></a>
+            <p style="text-align:center">Varieties of spices and herbs.<br>(Spices left side, Herbs right side)</p><br>
+            <a href="Images/matcha.jpg"  target=_blank"><img src="Images/matcha.jpg" height="300px" width="400px" alt="Matcha" border="1px solid #228B22"></a>
+            <a href="Images/pepper.jpeg" target="_blank"><img src="Images/pepper.jpeg" height="300px" width="409px" alt="Peppermint tea" border="1px solid #228B22"></a>
+            <p style="text-align:center">Different type of tea we have.<br>(Matcha tea left side, Peppermint tea right side)</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div classs="card">
+            <h2>Search us on</h2>
+            <a href="https://www.google.com" target="_blank"><img src="Images/google.png" height="70px" width="200px" alt="Google"></a><br>
+          </div>
+          <div class="card1">
+            <h2>Upcoming products</h2>
+              <h4 align="center">Pure Himalayan Salt</h4>
+              <a href="Images/salt.jpg" target="_blank"><img src="Images/salt.jpg" width="240px" height="150px" alt="Himalayan Salt" border="1px solid #228B22"></a>
+              <p>Pink Himalayan salt is chemically similar to table salt. It contains up to 98 percent sodium chloride.
+              The rest of the salt consists of trace minerals, such as potassium, magnesium, and calcium. These give the salt its light pink tint.</p>
+              <h4 align="center">Saffron</h4>
+              <a href="Images/saffron.jpg" target="_blank"><img src="Images/saffron.jpg" width="240px" height="150px" alt="Saffron" border="1px solid #228B22"></a>
+              <p>Saffron contains an impressive variety of plant compounds that act as antioxidants molecules that protect your cells against free radicals and oxidative stress.</p>
+              <h4 align="center">Yarsagumba</h4>
+              <a href="Images/yarsagumba.jpg" target="_blank"><img src="Images/yarsagumba.jpg" width="240px" height="150px" alt="Yarsagumba" border="1px solid #228B22"></a>
+              <p>According to WebMD, Yarsagumba or Cordyceps is beneficial for Anemia, Breathing disorders, Lung infections (Bronchitis), Cough, Decreasing fatigue, Dizziness, Frequent urination at night.</p>
+          </div>
+        </div>
+      </div>
+     <div class="footer">
+        <div class="bottom_text_1">
+          <h3>Socials:</h3>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Images/insta.png" width="25px" height="25px" alt="Instagram"></a><p>HearthNP</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="Images/fb.png" width="25px" height="25px" alt="Facebook"></a><p>HearthNepal</p>
+            <a href="https://mail.google.com/" target="_blank"><img src="Images/gmail.png" width="25px" height="25px" alt="Gmail"></a><br><a href="Hearth@gmail.com" style="color:#228B22;">Hearth@gmail.com</a>
+        </div>
+        <div class="bottom_text_3">
+          <h3>Location:</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7066.907295286187!2d85.3210152!3d27.672370600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1628395776969!5m2!1sen!2snp" width="400px" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="bottom_text_2">
+          <h3>Address info:</h3><br><p style="position: relative;top:-25px;">Kumaripati, Lalitpur<br>Nepal</p>
+          <h3>Opening time:</h3><br><p style="position: relative;top:-25px;">10:00 a.m.-6:00 p.m<br>Sunday - Friday<br><br>
+          <a href="#" style="color:#228B22;border:2px solid;text-decoration: none;padding:5px;">Back to up</a></p>
+        </div>
+      </div>  
+	</body>
+</html>
